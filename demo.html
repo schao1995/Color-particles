@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>彩色粒子</title>
+</head>
+<body>
+<div style="margin:100px">
+    <p>输入文字出现彩色粒子效果</p>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+</div>
+</body>
+</html>
+<script src="activate.js"></script>
+<script>
+    var sw=window.screen.width;
+    if (sw>1200) {
+        POWERMODE.colorful=true;
+        POWERMODE.shake=false;
+        document.body.addEventListener('input',POWERMODE)
+    }
+</script>
